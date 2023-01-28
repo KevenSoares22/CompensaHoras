@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensação de Horas</title>
+
+
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<!-- Cria um elemento de entrada de arquivo -->
+<div id="mesInput">
+    
+    <input type="number" placeholder="Mes" id="mes">
+    <button onclick="SelecionarArquivos()" class="btn">Continuar</button>
+</div>
+<div class="dados" style="display: none;">
+<div>
+<label for="" class="labelInput">Base de dados</label>    
+<input type="file" id="file-input-2" accept=".csv" class="inputBtn">
+</div>
+<div>
+<label for="" class="labelInput">Arquivo do mes</label>
+<input type="file" id="file-input-1" accept=".csv" class="inputBtn">
+</div>    
+<div>
+    
+
+<button onclick="readAndMergeFiles()" id="Document" class="btn">Ler e mesclar arquivos</button>
+</div></div>
+
+
+
+
+<div>
+
+</div>
+
+<div><button onclick="Calcular()" id="calcular" class="btn" style="display: none;">Calcular</button></div>
+<div><button onclick="Exportar('BaseHoras.csv')" id="exportar" class="btn" style="display: none;">Exportar Dados</button></div>
+<table id="table-2">
+
+
+
+
+    <tr class="firstLine">
+        <td>CRACHA</td>
+        <td>NOME</td>
+        <td>SALDO DO ARQUIVO</td>
+
+        <td>SALDO VENCIMENTO EM 3 MESES</td>
+        <td>SALDO VENCIMENTO EM 2 MESES</td>
+        <td>SALDO VENCIMENTO EM 1 MES</td>
+
+        <td>SALDO VENCIDO</td>
+        <td>MES</td>
+        
+    </tr>
+</table><!-- Cria um elemento de entrada de arquivo -->
+
+
+
+
+
+<style>
+
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<script src="./script/exportTable.js"></script>
+<script src="./script/objet.js"></script>
+
+
+
+
+</body>
+</html>
+

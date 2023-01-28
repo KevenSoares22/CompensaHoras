@@ -1,0 +1,84 @@
+div{
+    margin: 20px;
+
+
+
+}
+
+.dados label{
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+#mesInput, .dados{
+    background-color: rgb(203, 255, 255);
+    width: 160px;
+    
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.dados{
+    width: 320px;
+
+
+
+}
+#mes:focus{
+    outline: none;
+    font-weight: bold;
+
+}
+
+#mes{
+    border-style: none;
+    background-color:rgb(203, 255, 255);
+    width: 60px;
+    
+
+
+
+
+}
+
+
+
+.btn{
+    background-color: rgb(2, 111, 111);
+    border-style: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    padding: 10px;
+}
+
+.linhaPar{
+    background-color: rgb(210, 210, 210);
+
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+
+}
+
+td{
+    padding:10px;
+    text-align: center;
+
+
+}
+
+
+
+.firstLine{
+    background-color: rgb(2, 111, 111);
+    color: white;
+
+
+}
